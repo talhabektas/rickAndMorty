@@ -17,8 +17,7 @@ Bu proje, bir frontend değerlendirme görevi kapsamında geliştirilmiştir.
 
 Uygulamanın canlı demosu **GitHub Pages** üzerinde yayınlanmaktadır. Aşağıdaki linkten erişebilirsiniz:
 
-**[https://talhabektas.github.io/rick-and-morty-app/](https://talhabektas.github.io/rick-and-morty-app/)**
-
+**[https://talhabektas.github.io/rickAndMorty/](https://talhabektas.github.io/rickAndMorty/)**
 
 
 ## 🛠️ Kurulum ve Yerel Ortamda Çalıştırma
@@ -27,12 +26,12 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebi
 
 1.  **Projeyi klonlayın:**
     ```bash
-    git clone https://github.com/talhabektas/rick-and-morty-app.git
+    git clone https://github.com/talhabektas/rickAndMorty.git
     ```
 
 2.  **Proje dizinine gidin:**
     ```bash
-    cd rick-and-morty-app
+    cd rickAndMorty
     ```
 
 3.  **Gerekli paketleri yükleyin:**

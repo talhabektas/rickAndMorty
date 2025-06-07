@@ -1,7 +1,7 @@
 {
   "name": "rick-and-morty-app",
   "version": "0.1.0",
-  "homepage": "https://talhabektas.github.io/rick-and-morty-app",
+  "homepage": "https://talhabektas.github.io/rickAndMorty",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
