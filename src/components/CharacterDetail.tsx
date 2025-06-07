@@ -1,10 +1,13 @@
 import React from 'react';
 import { Character } from '../types/character';
 
+// Bileşenin alacağı propların tipini tanımlar.
 interface CharacterDetailProps {
+    // Detayları gösterilecek olan tek bir karakter nesnesi.
     character: Character;
 }
 
+// Bileşen için temel stil tanımlamaları.
 const detailCardStyle: React.CSSProperties = {
     marginTop: '2rem',
     padding: '1.5rem',
@@ -13,6 +16,7 @@ const detailCardStyle: React.CSSProperties = {
     borderRadius: '8px',
     display: 'flex',
     gap: '1.5rem',
+    flexWrap: 'wrap' // Ekran küçüldüğünde elemanların alta inmesini sağlar.
 };
 
 const imageStyle: React.CSSProperties = {
@@ -24,14 +28,19 @@ const imageStyle: React.CSSProperties = {
 
 const infoStyle: React.CSSProperties = {
     flex: 1,
+    minWidth: '200px' // Esnek yapıda daralmamasını sağlar.
 };
 
 const listStyle: React.CSSProperties = {
     maxHeight: '200px',
-    overflowY: 'auto',
+    overflowY: 'auto', // Bölüm listesi uzunsa kaydırma çubuğu çıkarır.
     paddingLeft: '1.2rem',
 }
 
+/**
+ * Seçilen bir karakterin detaylı bilgilerini bir kart içinde gösteren bileşen.
+ * @param {CharacterDetailProps} props - `character` nesnesini içerir.
+ */
 const CharacterDetail: React.FC<CharacterDetailProps> = ({ character }) => {
     return (
         <div style={detailCardStyle}>
@@ -46,6 +55,7 @@ const CharacterDetail: React.FC<CharacterDetailProps> = ({ character }) => {
             </div>
             <div>
                 <h3>Episodes</h3>
+                {/* Karakterin göründüğü bölümlerin URL'lerinden sadece bölüm numarasını alıp listeler. */}
                 <ul style={listStyle}>
                     {character.episode.map((ep, index) => (
                         <li key={index}>Episode {ep.split('/').pop()}</li>

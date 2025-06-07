@@ -1,11 +1,14 @@
 import React from 'react';
 
+// Bileşenin proplarının tipini tanımlar.
 interface FilterBarProps {
+    // Filtre inputlarının mevcut değerlerini tutan nesne.
     filters: {
         name: string;
         status: string;
         species: string;
     };
+    // Bir filtre değiştiğinde, yeni filtre nesnesini üst bileşene (App.tsx) bildiren fonksiyon.
     onFilterChange: (filters: { name: string; status: string; species: string; }) => void;
 }
 
@@ -26,10 +29,19 @@ const inputGroupStyle: React.CSSProperties = {
     gap: '0.5rem',
 }
 
+/**
+ * Kullanıcının karakterleri filtrelemesi için input alanları sunan bileşen.
+ * Bu bir "Controlled Component"tir, yani tüm state'i (filtre değerleri)
+ * proplar aracılığıyla üst bileşenden (App.tsx) alır.
+ * @param {FilterBarProps} props - `filters` nesnesi ve `onFilterChange` handler'ı.
+ */
 const FilterBar: React.FC<FilterBarProps> = ({ filters, onFilterChange }) => {
 
+    // Input veya select alanlarından herhangi biri değiştiğinde tetiklenir.
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
+        // Değişmeyen filtreleri koruyarak sadece değişen alanı günceller
+        // ve yeni durumu `onFilterChange` prop'u ile yukarıya bildirir.
         onFilterChange({
             ...filters,
             [name]: value,
