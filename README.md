@@ -12,15 +12,14 @@ Bu proje, bir frontend değerlendirme görevi kapsamında geliştirilmiştir.
 -   **Dinamik Sayfalandırma**: Karakter listesi arasında kolayca gezinmek için "Önceki" ve "Sonraki" butonları.
 -   **Sayfa Boyutu Ayarı**: Kullanıcıların sayfa başına kaç karakter (10, 20, 50) görmek istediklerini seçebilmeleri.
 -   **Hata Yönetimi**: API'den veri alınamadığında veya filtre sonucunda veri bulunamadığında kullanıcıya anlamlı mesajlar gösterilir.
--   **Anlık Geri Bildirim**: Veri veya detaylar yüklenirken "Yükleniyor..." mesajları ile kullanıcı bilgilendirilir.
 
 ## 🚀 Canlı Demo
 
 Uygulamanın canlı demosu **GitHub Pages** üzerinde yayınlanmaktadır. Aşağıdaki linkten erişebilirsiniz:
 
-**[https://your-github-username.github.io/rick-and-morty-app/](https://your-github-username.github.io/rick-and-morty-app/)**
+**[https://talhabektas.github.io/rick-and-morty-app/](https://talhabektas.github.io/rick-and-morty-app/)**
 
-*(Not: Projeyi kendi GitHub hesabınıza yükledikten sonra lütfen yukarıdaki `your-github-username` kısmını kendi kullanıcı adınızla güncelleyin.)*
+
 
 ## 🛠️ Kurulum ve Yerel Ortamda Çalıştırma
 
@@ -28,7 +27,7 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebi
 
 1.  **Projeyi klonlayın:**
     ```bash
-    git clone https://github.com/your-github-username/rick-and-morty-app.git
+    git clone https://github.com/talhabektas/rick-and-morty-app.git
     ```
 
 2.  **Proje dizinine gidin:**
@@ -47,10 +46,3 @@ Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebi
     ```
     Uygulama, tarayıcınızda `http://localhost:3000` adresinde otomatik olarak açılacaktır.
 
-## 💻 Kullanılan Teknolojiler
-
--   **React**: Kullanıcı arayüzünü oluşturmak için kullanıldı.
--   **TypeScript**: Tip güvenliği sağlamak ve daha öngörülebilir bir kod tabanı oluşturmak için tercih edildi.
--   **React Hooks**: `useState`, `useEffect`, `useMemo` ve `useRef` gibi hook'lar ile bileşenlerin durumu ve yaşam döngüsü yönetildi.
--   **Fetch API**: Rick and Morty API'sinden asenkron veri çekmek için kullanıldı.
--   **CSS (Inline & Global)**: Temel ve bileşen bazlı stilendirme için kullanıldı.
